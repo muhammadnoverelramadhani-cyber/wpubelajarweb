@@ -6,6 +6,25 @@
     <title>Select & Textarea</title>
   </head>
   <body>
-    <h3>Pilih Kategori</h3>
+    <form>
+      <h3>Pilih Kategori</h3>
+      <select>
+        <option>--Pilih Kategori--</option>
+        <option value="wd">Weeding</option>
+        <option value="br">Birthday Party</option>
+        <option value="fest">Festival</option>
+      </select>
+      <br />
+      <h3>About Me</h3>
+      <textarea
+        name="about"
+        id="about"
+        rows="20"
+        cols="100"
+        placeholder="Tentang saya..."
+      ></textarea>
+      <br /><br />
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
