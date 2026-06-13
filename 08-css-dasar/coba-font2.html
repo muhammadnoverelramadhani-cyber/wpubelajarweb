@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coba CSS - Font Styling</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Bitcount+Single:wght@100..900&display=swap");
+
+      @font-face {
+        font-family: "AlienBlock";
+        src: url("fonts/AlienBlock-Regular.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      h1 {
+        color: #ff5733;
+        font-size: 48px;
+        text-align: center;
+        font-family: "Bitcount Single", sans-serif;
+      }
+      p {
+        font-family: "Archivo", sans-serif;
+        font-size: 18px;
+        color: #333;
+        line-height: 1.6;
+        margin: 20px;
+        font-weight: 400;
+      }
+
+      .font-alien {
+        font-family: "AlienBlock", sans-serif;
+        font-size: 24px;
+        color: #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hallo Cemere</h1>
+    <p>This is a paragraph with custom font styling.</p>
+    <p class="font-alien">
+      This is another paragraph with custom font styling.
+    </p>
+  </body>
+</html>
