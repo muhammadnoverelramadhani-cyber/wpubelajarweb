@@ -1,0 +1,197 @@
+/* ============================================
+   MODERN CSS RESET — best practice 2024/2025
+   ============================================ */
+
+/* 1. Box-sizing lebih intuitif, berlaku ke semua elemen */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Hapus default margin & padding semua elemen */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Line-height netral untuk konsistensi rhythm teks */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 4. html & body minimal setinggi viewport, bagus buat sticky footer / layout full-screen */
+html,
+body {
+  height: 100%;
+}
+
+/* 5. Media default responsif */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Form elements mewarisi font, biar nggak ikut default browser yang aneh */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Cegah overflow teks panjang (URL, kata panjang) di elemen teks */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Balance wrapping khusus heading, biar nggak "yatim piatu" satu kata sendirian di baris */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* 9. Root stacking context, penting kalau pakai #root/#__next (React/Next.js) untuk animasi/portal */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* 10. List tanpa bullet secara default (aktifkan lagi manual kalau perlu, misal artikel/blog) */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* 11. Link default nggak otomatis warna beda kalau nggak diberi class */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: inherit;
+}
+
+/* 12. Hormati preferensi user yang matiin animasi (aksesibilitas) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #1e293b;
+  color: #eef6fb;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header .genre-tags {
+  margin-top: 10px;
+}
+
+header .genre-tags .tag {
+  display: inline-block;
+  background-color: #22d3ee;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #1e293b;
+}
+
+main {
+  max-width: 800px;
+  margin: 0px auto;
+  padding: 20px;
+}
+
+main .profile-card {
+  background-color: #f1f5f9;
+  padding: 40px;
+  margin: 30px auto;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+main .profile-card .artist-photo {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #22d3ee;
+  object-fit: cover;
+  margin: 0 auto 30px auto;
+}
+
+main .profile-card .bio {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+main .profile-card .bio p {
+  margin-bottom: 30px;
+}
+
+main .profile-card .stats {
+  margin-top: 30px;
+}
+
+main .profile-card .stat-item {
+  display: inline-block;
+  width: 150px;
+  padding: 30px;
+  background-color: #cbd5e1;
+  margin: 30px 30px;
+  border-radius: 999px;
+  border: 5px solid #22d3ee;
+}
+
+main .profile-card .stat-item .stat-value {
+  font-size: 2em;
+  font-weight: 800;
+  color: #1e293b;
+}
+
+main .profile-card .stat-item .stat-value .stat-label {
+  font-size: 0.9em;
+  color: #1e293b;
+}
+
+main .discography {
+  margin-top: 50px 0;
+}
