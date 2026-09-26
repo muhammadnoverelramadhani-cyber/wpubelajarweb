@@ -110,7 +110,7 @@ h3 {
 header {
   text-align: center;
   padding: 40px 20px;
-  background-color: #1e293b;
+  background-color: #48515f;
   color: #eef6fb;
 }
 
@@ -192,6 +192,50 @@ main .profile-card .stat-item .stat-value .stat-label {
   color: #1e293b;
 }
 
-main .discography {
-  margin-top: 50px 0;
+.discography {
+  margin: 50px auto;
+}
+
+.discography h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.discography .album-list {
+  text-align: center;
+}
+
+.discography .album-card {
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f1f5f9;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.discography .album-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 0 auto 20px auto;
+}
+
+.social-links {
+  margin: 50px auto;
+  text-align: center;
+}
+.social-links .social-btn {
+  margin: 50px auto;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #48515f;
+  color: #eef6fb;
 }
